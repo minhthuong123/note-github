@@ -1,0 +1,54 @@
+*** thao tác trên vs code
+chọn new terminal /te_mi_nồ/
+- git init: được sử dưng để tạo, khởi tạo một kho chứa Git mới 
+
+- git remote add origin + đường link github: liên kết link github, toại file lưu trên web github, coppy đừơng dẫn github
+- git add .
+- git commit -m"commit1": lan1 gọi là commit(làm) tạo ra 1 commit
+- git push -u origin master: đưa code lên github
+- git pull : cập nhật đoạn code từ github về máy tính (cập nhật tất cả file)
+
+
+*** thao tác trên CMD
+- git add . => git commit -m"commit2" => git push :cập nhật toàn bộ file
+- git remote -v: kiểm tra có remote chưa
+- git log --oneline: xem lại lịch sử
+- git branch: kiểm tra nhánh đang làm việc
+- git branch + tên tạo nhánh: tạo nhánh
+- git checkout + tên nhánh (hoặc +mã commit): chuyển nhánh khác 
+- git switch + tên nhánh cửu: quay lại nhánh cửu
+- git status : kiểm tra thư mục làm việc nhánh hiện tại
+- git merge + tên nhánh cần gộp: gộp nhánh đã sửa lỗi
+- git branch -d + tên nhánh cần xóa: xóa nhánh
+- git merge --abort: quay lại trước lệnh gộp nhánh
+- git log --oneline --graph :	kiểm tra sơ đồ gộp nhánh
+- clear : xóa các dòng lệnh
+- git restore + tên file (hoặc . toàn file mất)
+- git commit --amend -m "tên commit cuối" : cập nhật vào commit cuối
+- git diff mã commit1 và 2 --stat : so sánh 2 commit
+-** sử lý xung đột gộp nhánh
+-git mergetool :dòng lệnh gộ nhánh xung đột
+=> enter => :diffg LO : giữ lại nội dung nhánh 1
+:diffg RE : giữ lại nhánh 2
+:diffg BA : gộp 2 nhánh lại với nhau
+=>:wq lưu lại kết quả => quay lại gôp nhánh git add ., tạo 1 commit mới - gộp nhánh
+
+**** 
+cd .. => Để trở về thư mục trước đó hoặc trở về thư mục hiện tại
+cd . : không chuyển đổi thư mục ở nguyên vị trí hiện tại
+cd / : chuyển đến thư mục gốc của ổ đĩa
+cd <tên thư mục con> : chuyển đến thư mục con bên trong thư mục hiện tại. Ví dụ chúng ta đang ở trong ổ C và muốn truy cập đến thư mục Downloads bên trong ổ này cú pháp sẽ là: cd Downloads
+cd \d <đường dẫn đến thư mục> : chuyển đến thư mục với đường dẫn là đường dẫn cho trước. Ví dụ bạn muốn chuyển đổi từ ổ C sang D cú pháp sẽ là: cd \d D:\ 
+cd tên file =>  truy cập thư mục
+cd tech/sub-folder => chỏ đến thư mục con
+mkdir tech => tạo thư mục
+touch filename.html =>Sử dụng lệnh touch để tạo một file trống
+ ls =>để hiển thị nội dung của một thư mục
+open ~/Desktop, open readme.txt, edit readme.txt
+Sử dụng lệnh ipconfig để tìm kiếm nhanh chóng địa chỉ IP của mình.
+
+***CMD
+xóa màng hình cls
+in ra đường dẫn hiện tại cd
+hiện danh sách các tập tin và thư mục hiện tại đang đứng dir /a
+di chuyển đến thư mục gốc (D:, C:, F:
